@@ -5,9 +5,8 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-#      - name: Install dependencies
-#        run: |
-#          sudo apt update && sudo apt install -y build-essential cmake
+        run: |
+          sudo apt update && sudo apt install -y build-essential cmake
       - uses: actions/checkout@v4
       - run: mkdir -p build
       - working-directory: build
