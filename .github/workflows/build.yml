@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: mkdir -p build
       - working-directory: build
-        run: cmake -B . ..
+        run: cmake -D VMA_BUILD_SAMPLES=ON -B . ..
       - working-directory: build
         run: make
