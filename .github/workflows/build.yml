@@ -8,6 +8,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: mkdir -p build
       - working-directory: build
-        run: cmake ..
+        run: cmake -B . ..
       - working-directory: build
         run: make
