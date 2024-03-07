@@ -15,6 +15,6 @@ jobs:
       - working-directory: build
         run: ls
       - working-directory: build
-        run: cat Makefile
+        run: cat CMakeFiles/Makefile2
       - working-directory: build
         run: make -v
