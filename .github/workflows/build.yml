@@ -12,6 +12,9 @@ jobs:
       - run: mkdir -p build
       - working-directory: build
         run: cmake -D VMA_BUILD_SAMPLES=ON -B . ..
-      - run: cat Makefile
+      - working-directory: build
+        run: ls
+      - working-directory: build
+        run: cat makefile
       - working-directory: build
         run: make -v
