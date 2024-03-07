@@ -13,4 +13,4 @@ jobs:
       - working-directory: build
         run: cmake -D VMA_BUILD_SAMPLES=ON -B . ..
       - working-directory: build
-        run: make
+        run: make -v
